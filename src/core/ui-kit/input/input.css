@@ -1,0 +1,69 @@
+.input-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    position: relative;
+    margin: 0 auto 0;
+}
+
+.input-box.large {
+    width: 100%;
+    height: 70px;
+}
+
+.input-box.medium {
+    width: 75%;
+    height: 50px;
+}
+
+.input-box.small {
+    width: 50%;
+    height: 40px;
+}
+
+.ui-input {
+    width: 100%;
+    height: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+    padding-left: 10px;
+    outline-color: blue;
+}
+
+.ui-input.validate-outline {
+    outline-color: red;
+}
+
+.validate-label {
+    position: absolute;
+    font-size: 10px;
+    top: 45px;
+    left: 4px;
+    color: red;
+}
+
+.input-label {
+    color: black;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background: #fff;
+    padding: 0 5px;
+}
+
+.toggle-visibility {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 30%;
+    left: 93%;
+    cursor: pointer;
+    background: url(./images/view.svg);
+}
+
+.toggle-visibility.view {
+    cursor: pointer;
+    background: url(./images/no-view.svg);
+}
